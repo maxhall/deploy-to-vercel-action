@@ -101,20 +101,6 @@ const init = () => {
 			repo: REPOSITORY,
 			ref: REF
 		})
-		
-		// core.info('Get commit response')
-		// core.info(getCommitResponse)
-		// core.info(getCommitResponse.data)
-		// core.info(getCommitResponse.verification)
-		// core.info(getCommitResponse.verification.verified)
-		// core.info(getCommitResponse.verification.reason)
-		// core.info(getCommitResponse.verification.signature)
-		// core.info(getCommitResponse.verification.payload)
-		
-		// const { data } = getCommitResponse;
-		// core.info(data.author)
-		// core.info(`${(data.author) ? data.author.login : 'No data.author'}`)
-		// core.info(data.commit.author)
 
 		return {
 			authorName: data.commit.author.name,
