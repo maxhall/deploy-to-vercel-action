@@ -95,11 +95,19 @@ const init = () => {
 	}
 
 	const getCommit = async () => {
-		const { data } = await client.repos.getCommit({
+		const getCommitResponse = await client.repos.getCommit({
 			owner: USER,
 			repo: REPOSITORY,
 			ref: REF
 		})
+		
+		core.info('Get commit response')
+		core.info(getCommitResponse)
+		core.info(getCommitResponse.data)
+		core.info(getCommitResponse.verification)
+		
+		const { data } = getCommitResponse;
+		core.info(getCommitResponse.author)
 
 		return {
 			authorName: data.commit.author.name,
