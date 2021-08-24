@@ -14054,6 +14054,7 @@ module.exports = context
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 const github = __nccwpck_require__(5438)
+const core = __nccwpck_require__(2186)
 
 const {
 	GITHUB_TOKEN,
