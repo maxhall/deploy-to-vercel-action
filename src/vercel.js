@@ -35,7 +35,7 @@ const init = () => {
 		if (commit) {
 			const metadata = [
 				`githubCommitAuthorName=${ commit.authorName }`,
-				`githubCommitAuthorLogin=${ commit.authorLogin }`,
+				// `githubCommitAuthorLogin=${ commit.authorLogin }`,
 				`githubCommitMessage=${ commit.commitMessage }`,
 				`githubCommitOrg=${ USER }`,
 				`githubCommitRepo=${ REPOSITORY }`,
